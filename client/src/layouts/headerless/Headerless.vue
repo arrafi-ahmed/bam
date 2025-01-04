@@ -60,7 +60,7 @@ onMounted(async () => {
             <v-col cols="12">
               <div v-if="club.id">
                 <logo
-                  :img-src="getApiPublicImgUrl(club.logo, 'club-logo')"
+                  :img-src="club.logo ? getApiPublicImgUrl(club.logo, 'club-logo') : null"
                   :max-width="xs ? 200 : 300"
                   :title="!club.logo ? club.name : null"
                   container-class="clickable"

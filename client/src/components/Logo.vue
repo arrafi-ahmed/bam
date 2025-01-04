@@ -24,7 +24,7 @@ const { imgSrc, title, imgClass, containerClass, maxWidth, width } =
       :width="width"
     ></v-img>
 
-    <div v-if="title" class="pl-2">
+    <div v-if="title" :class="{ 'pl-2': imgSrc }">
       <component :is="xs ? 'h3' : 'h2'">
         <span class="text-primary">{{ title }}</span>
       </component>
