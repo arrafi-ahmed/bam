@@ -169,7 +169,7 @@ onMounted(() => {
                 </template>
               </v-list>
               <v-alert v-else border="start" closable density="compact"
-                >No clubs found!
+                >No organizers found!
               </v-alert>
             </v-expansion-panel-text>
           </v-expansion-panel>

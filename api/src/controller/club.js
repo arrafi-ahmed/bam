@@ -9,7 +9,7 @@ router.post("/save", auth, uploadClubLogo, compressImages, (req, res, next) => {
   clubService
     .save({ payload: req.body, files: req.files, currentUser: req.currentUser })
     .then((results) => {
-      res.status(200).json(new ApiResponse("Club saved!", results));
+      res.status(200).json(new ApiResponse("Organizer saved!", results));
     })
     .catch((err) => next(err));
 });
@@ -34,7 +34,7 @@ router.get("/removeClub", auth, isSudo, (req, res, next) => {
       clubId: req.query.clubId,
     })
     .then((results) =>
-      res.status(200).json(new ApiResponse("Club deleted!", results)),
+      res.status(200).json(new ApiResponse("Organizer deleted!", results)),
     )
     .catch((err) => next(err));
 });
