@@ -3,7 +3,7 @@ import Logo from "@/components/Logo.vue";
 import { useRouter } from "vue-router";
 import { useStore } from "vuex";
 import { computed, ref } from "vue";
-import { getToLink } from "@/others/util";
+import {appInfo, getToLink} from "@/others/util";
 import { useDisplay } from "vuetify";
 import UserAvatar from "@/components/UserAvatar.vue";
 
@@ -30,7 +30,7 @@ const logoDest = computed(() =>
 <template>
   <v-app-bar :order="1" class="px-2 px-md-5" color="grey-lighten-3" dense flat>
     <logo
-      :title="true"
+      :title="appInfo.name"
       :width="40"
       container-class="clickable"
       img-class="mx-auto"

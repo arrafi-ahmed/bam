@@ -15,7 +15,7 @@ const { imgSrc, title, imgClass, containerClass, maxWidth, width } =
 </script>
 
 <template>
-  <div :class="`d-flex align-center ${containerClass}`">
+  <div :class="`d-flex justify-center align-center ${containerClass}`">
     <v-img
       v-if="imgSrc"
       :class="` ${imgClass}`"
@@ -26,7 +26,7 @@ const { imgSrc, title, imgClass, containerClass, maxWidth, width } =
 
     <div v-if="title" class="pl-2">
       <component :is="xs ? 'h3' : 'h2'">
-        <span class="text-primary">{{ appInfo.name }}</span>
+        <span class="text-primary">{{ title }}</span>
       </component>
     </div>
   </div>
