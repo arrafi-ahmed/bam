@@ -1,23 +1,20 @@
 .DS_Store
 node_modules
-/dist
+client/dist
 
-api/public/club-logo/*
-api/public/event-banner/*
+api/public/team-logo/*
 api/public/tmp/*
 api/public/user/*
 
 # allow all the folders themselves to be tracked
-!api/public/club-logo/.gitkeep
-!api/public/event-banner/.gitkeep
+!api/public/team-logo/.gitkeep
 !api/public/tmp/.gitkeep
 !api/public/user/.gitkeep
 
 # env files
-client/.env
-client/.env.development
-api/.env.development
-api/.env.production
+.env
+.env.development
+**/.env.production
 
 # skip ignoring production env as its used in build on prod server
 !client/.env.production
