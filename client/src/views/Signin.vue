@@ -153,7 +153,8 @@ const handleSubmitResetPassword = async () => {
             <v-spacer></v-spacer>
             <v-btn
               :density="mobile ? 'compact' : 'default'"
-              color="primary"
+              variant="flat"
+              color="secondary"
               type="submit"
               >Submit
             </v-btn>

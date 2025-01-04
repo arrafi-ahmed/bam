@@ -185,7 +185,10 @@ onMounted(() => {
       </v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn color="primary" @click="handleSubmitCredential('admin')"
+        <v-btn
+          variant="flat"
+          color="secondary"
+          @click="handleSubmitCredential('admin')"
           >Generate
         </v-btn>
       </v-card-actions>
@@ -223,7 +226,8 @@ onMounted(() => {
       <v-card-actions>
         <v-spacer></v-spacer>
         <v-btn
-          color="primary"
+          variant="flat"
+          color="secondary"
           @click="handleSubmitCredential(isEditDialogAdmin ? 'Admin' : null)"
           >Save
         </v-btn>

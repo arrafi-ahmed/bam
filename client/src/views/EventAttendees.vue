@@ -318,10 +318,16 @@ onMounted(() => {
       </v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn color="error" @click="attendeeDetailsDialog = false"
+        <v-btn
+          variant="flat"
+          color="error"
+          @click="attendeeDetailsDialog = false"
           >Close
         </v-btn>
-        <v-btn color="primary" @click="updateAttendee(editingAttendee.rId)"
+        <v-btn
+          variant="flat"
+          color="primary"
+          @click="updateAttendee(editingAttendee.rId)"
           >Update
         </v-btn>
       </v-card-actions>
