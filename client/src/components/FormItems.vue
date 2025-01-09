@@ -52,7 +52,6 @@ watch(inputResponses.value, (newVal) => {
           ]"
           class="mt-2 mt-md-4 input-color-primary"
           clearable
-          color="tertiary"
           density="default"
           hide-details="auto"
           rounded="lg"
@@ -73,7 +72,6 @@ watch(inputResponses.value, (newVal) => {
           :rules="[(v) => !!v || !item.required || 'required']"
           class="mt-2 mt-md-4 input-color-primary"
           clearable
-          color="tertiary"
           density="default"
           hide-details="auto"
           rounded="lg"
@@ -97,7 +95,6 @@ watch(inputResponses.value, (newVal) => {
           :rules="[(v) => !!v || !item.required || 'required']"
           class="input-color-primary"
           clearable
-          color="primary"
           density="default"
           hide-details="auto"
           rounded="lg"
@@ -149,7 +146,6 @@ watch(inputResponses.value, (newVal) => {
           :rules="[(v) => !!v || !item.required || 'required']"
           class="mt-2 mt-md-4 input-color-primary"
           clearable
-          color="tertiary"
           density="default"
           hide-details="auto"
           rounded="lg"
